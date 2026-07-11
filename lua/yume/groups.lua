@@ -18,6 +18,15 @@ M.setup = function()
     Operator = { fg = colors.magic_purple },
     Keyword = { fg = colors.deep_violet },
     Exception = { fg = colors.cozy_red },
+
+    StorageClass = { fg = colors.magic_purple },
+    Structure = { fg = colors.magic_purple },
+    Special = { fg = colors.marshmellow },
+    Type = { fg = colors.deep_violet },
+    Typedef = { link = 'Type' },
+    SpecialChar = { link = 'Special' },
+    Tag = { fg = colors.base_300 },
+    Debug = { fg = colors.base_400 },
   }
 end
 
