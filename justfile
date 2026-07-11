@@ -1,0 +1,5 @@
+fmt:
+  stylua .
+
+lint:
+  selene .
