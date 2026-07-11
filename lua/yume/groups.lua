@@ -1,6 +1,6 @@
 local M = {}
 
-local colors = require('palette')
+local colors = require('yume.palette')
 
 M.setup = function()
   return {

@@ -1,7 +1,7 @@
 local M = {}
 
 M.setup = function()
-  local groups = require('groups').setup()
+  local groups = require('yume.groups').setup()
 
   for group, setting in pairs(groups) do
     vim.api.nvim_set_hl(0, group, setting)
