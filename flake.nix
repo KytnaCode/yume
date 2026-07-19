@@ -48,6 +48,14 @@
           })
 
           require('neo-tree').setup({})
+
+          require('yume').setup({
+            integrations = {
+              neotree = true,
+            },
+          })
+
+          vim.cmd('colorscheme yume')
           EOF
         '';
 

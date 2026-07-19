@@ -1,1 +1,1 @@
-require('yume').setup()
+require('yume').load()
