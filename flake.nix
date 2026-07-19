@@ -46,6 +46,8 @@
               },
             },
           })
+
+          require('neo-tree').setup({})
           EOF
         '';
 
@@ -56,6 +58,15 @@
           };
           nvim-web-dev-icons = {
             start = [pkgs.vimPlugins.nvim-web-devicons];
+          };
+          nui = {
+            start = [pkgs.vimPlugins.nui-nvim];
+          };
+          plenary = {
+            start = [pkgs.vimPlugins.plenary-nvim];
+          };
+          neo-tree = {
+            start = [pkgs.vimPlugins.neo-tree-nvim];
           };
           lualine = {
             start = [pkgs.vimPlugins.lualine-nvim];
