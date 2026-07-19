@@ -21,6 +21,7 @@ M.setup = function()
     Conditional = { link = 'Keyword' },
     Statement = { link = 'Keyword' },
     Repeat = { link = 'Keyword' },
+    MatchParen = { link = 'Cursor' },
 
     StorageClass = { fg = colors.bright_orchid },
     Structure = { fg = colors.bright_orchid },
