@@ -9,7 +9,7 @@ local colors = {
   -- Purples
   vivid_amethyst = '#AD31D9',
   bright_orchid = '#C355EA',
-  psychedetic_purple = '#D47BF4',
+  psychedelic_purple = '#D47BF4',
   pastel_lavender = '#E5A9FA',
   pale_thistle = '#F7E3FE',
 
