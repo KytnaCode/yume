@@ -7,6 +7,7 @@ M.setup = function()
     Cursor = { fg = colors.alabaster_pink, bg = colors.carnation_pink },
     CursorLine = { bg = colors.white_rose_dust },
     StatusLine = { bg = colors.alabaster_pink },
+    WinSeparator = { fg = colors.white_rose_dust },
     Normal = { fg = colors.text, bg = colors.alabaster_pink },
     Visual = { fg = colors.text, bg = colors.pastel_lavender },
     VisualNOS = { fg = colors.text, bg = colors.pale_thistle },
