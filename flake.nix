@@ -26,12 +26,20 @@
           vim.o.number = true
           vim.o.relativenumber = true
           vim.o.signcolumn = 'yes:1'
+
+          require('lualine').setup({ options = { theme = "yume" } })
           EOF
         '';
 
-        packages.yume = {
-          start = [yume];
-          opt = [];
+        packages = {
+          yume = {
+            start = [yume];
+            opt = [];
+          };
+          lualine = {
+            start = [pkgs.vimPlugins.lualine-nvim];
+            opt = [];
+          };
         };
       };
     };
