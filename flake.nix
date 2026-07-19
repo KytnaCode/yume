@@ -54,6 +54,9 @@
             start = [yume];
             opt = [];
           };
+          nvim-web-dev-icons = {
+            start = [pkgs.vimPlugins.nvim-web-devicons];
+          };
           lualine = {
             start = [pkgs.vimPlugins.lualine-nvim];
             opt = [];
