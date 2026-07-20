@@ -12,7 +12,7 @@ M.setup = function()
     Number = { fg = colors.neon_orchid },
     Float = { fg = colors.neon_orchid },
     Boolean = { fg = colors.neon_orchid },
-    Identifier = { fg = colors.neon_orchid },
+    Identifier = { fg = colors.text },
     Function = { fg = colors.bright_orchid },
     Label = { fg = colors.pastel_indigo },
     Operator = { fg = colors.bright_orchid },
