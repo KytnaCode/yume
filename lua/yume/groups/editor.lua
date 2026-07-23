@@ -9,6 +9,8 @@ M.setup = function()
     StatusLine = { bg = colors.alabaster_pink },
     StatusLineNC = { link = 'StatusLine' },
     WinSeparator = { fg = colors.white_rose_dust },
+    WinBar = { fg = colors.text, bg = colors.white_rose_dust },
+    WinBarNC = { link = 'WinBar' },
     Normal = { fg = colors.text, bg = colors.alabaster_pink },
     NormalNC = { fg = colors.text, bg = colors.white_rose_dust },
     NormalFloat = { fg = colors.text, bg = colors.alabaster_pink },
