@@ -22,6 +22,7 @@ M.setup = function()
     Statement = { link = 'Keyword' },
     Repeat = { link = 'Keyword' },
     MatchParen = { link = 'Cursor' },
+    Delimiter = { link = 'Special' },
 
     StorageClass = { fg = colors.bright_orchid },
     Structure = { fg = colors.bright_orchid },
