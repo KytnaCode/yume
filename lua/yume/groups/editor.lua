@@ -10,6 +10,7 @@ M.setup = function()
     StatusLineNC = { link = 'StatusLine' },
     WinSeparator = { fg = colors.white_rose_dust },
     Normal = { fg = colors.text, bg = colors.alabaster_pink },
+    NormalNC = { fg = colors.text, bg = colors.white_rose_dust },
     Visual = { fg = colors.text, bg = colors.pastel_lavender },
     VisualNOS = { fg = colors.text, bg = colors.pale_thistle },
     Pmenu = { fg = colors.text, bg = colors.alabaster_pink },
