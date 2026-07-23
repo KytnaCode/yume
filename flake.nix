@@ -9,12 +9,26 @@
     systems = ["x86_64-linux"];
     eachSystem = f: nixpkgs.lib.genAttrs systems (system: f (import nixpkgs {inherit system;}));
 
-    get-yume = pkgs:
-      pkgs.vimUtils.buildVimPlugin {
-        pname = "yume";
-        version = "0.1.0";
-        src = ./.;
-      };
+    get-yume = let
+      ignoreList = ''
+        examples
+        tmp
+        README.md
+        flake.lock
+        flake.nix
+        justfile
+        selene.toml
+        stylua.toml
+        vim.yaml
+        .luarc.json
+      '';
+    in
+      pkgs:
+        pkgs.vimUtils.buildVimPlugin {
+          pname = "yume";
+          version = "0.1.0";
+          src = pkgs.nix-gitignoreSource ignoreList ./.;
+        };
 
     get-neovim = pkgs:
       pkgs.neovim.override {
