@@ -11,6 +11,8 @@ M.setup = function()
     Normal = { fg = colors.text, bg = colors.alabaster_pink },
     Visual = { fg = colors.text, bg = colors.pastel_lavender },
     VisualNOS = { fg = colors.text, bg = colors.pale_thistle },
+    Pmenu = { fg = colors.text, bg = colors.alabaster_pink },
+    PmenuSel = { fg = colors.text, bg = colors.white_rose_dust },
   }
 end
 
