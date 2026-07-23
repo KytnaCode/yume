@@ -25,7 +25,7 @@ M.setup = function()
 
     StorageClass = { fg = colors.bright_orchid },
     Structure = { fg = colors.bright_orchid },
-    Special = { fg = colors.male_pauve_mist },
+    Special = { fg = colors.coral_pink },
     Type = { fg = colors.bright_orchid },
     Typedef = { link = 'Type' },
     SpecialChar = { link = 'Special' },
