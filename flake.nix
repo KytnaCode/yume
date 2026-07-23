@@ -27,7 +27,7 @@
         pkgs.vimUtils.buildVimPlugin {
           pname = "yume";
           version = "0.1.0";
-          src = pkgs.nix-gitignoreSource ignoreList ./.;
+          src = pkgs.nix-gitignore.gitignoreSource [ignoreList] ./.;
         };
 
     get-neovim = pkgs:
