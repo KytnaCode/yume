@@ -7,7 +7,7 @@
 
   outputs = {nixpkgs, ...}: let
     systems = ["x86_64-linux"];
-    eachSystem = f: nixpkgs.genAttrs systems (system: f import nixpkgs {inherit system;});
+    eachSystem = f: nixpkgs.lib.genAttrs systems (system: f (import nixpkgs {inherit system;}));
 
     get-yume = pkgs:
       pkgs.vimUtils.buildVimPlugin {
