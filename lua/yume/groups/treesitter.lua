@@ -8,6 +8,7 @@ M.setup = function()
     ['@variable.builtin'] = { fg = colors.bright_orchid },
     ['@variable.parameter'] = { fg = colors.neon_orchid },
     ['@string'] = { fg = colors.carnation_pink },
+    ['@function.builtin'] = { link = 'Keyword' },
   }
 end
 
