@@ -5,6 +5,7 @@ local colors = require('yume.palette')
 M.setup = function()
   return {
     Directory = { fg = colors.carnation_pink },
+    NeotreeNormalNC = { link = 'NeotreeNormal' },
     NeoTreeFileName = { fg = colors.text },
     NeoTreeDirectoryName = { fg = colors.text },
     NeoTreeModified = { fg = colors.carnation_pink },
