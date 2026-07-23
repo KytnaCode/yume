@@ -6,6 +6,7 @@ M.setup = function()
   return {
     Directory = { fg = colors.carnation_pink },
     NeotreeNormalNC = { link = 'NeotreeNormal' },
+    NeoTreeTitleBar = { fg = colors.text, bg = colors.white_rose_dust },
     NeoTreeFileName = { fg = colors.text },
     NeoTreeDirectoryName = { fg = colors.text },
     NeoTreeModified = { fg = colors.carnation_pink },
