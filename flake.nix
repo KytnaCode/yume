@@ -65,6 +65,17 @@
 
             require('neo-tree').setup({})
 
+            vim.lsp.enable('lua_ls')
+
+            require('lspsaga').setup({
+              implements = {
+                enable = false,
+              },
+              lightbulb = {
+                virtual_text = false,
+              },
+            })
+
             require('yume').setup({
               integrations = {
                 neotree = true,
@@ -77,8 +88,17 @@
 
           packages = {
             yume = {
-              start = [get-yume pkgs];
+              start = [(get-yume pkgs)];
               opt = [];
+            };
+            lspsaga-nvim = {
+              start = [pkgs.vimPlugins.lspsaga-nvim];
+            };
+            lspconfig = {
+              start = [pkgs.vimPlugins.nvim-lspconfig];
+            };
+            nvim-treesitter = {
+              start = [pkgs.vimPlugins.nvim-treesitter];
             };
             nvim-web-dev-icons = {
               start = [pkgs.vimPlugins.nvim-web-devicons];
@@ -111,6 +131,7 @@
             neovim-dev
             stylua
             selene
+            lua-language-server
           ];
         };
     });
